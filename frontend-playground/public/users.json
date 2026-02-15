@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Ana",
+        "email": "ana@gmail.com"
+    },
+    {
+        "id": 2,
+        "name": "Carlos",
+        "email": "carlos@gmail.com"
+    },
+    {
+        "id": 3,
+        "name": "Julian",
+        "email": "Julian@gmail.com"
+    },
+    {
+        "id": 4,
+        "name": "Julian 2",
+        "email": "Julian@gmail.com"
+    },
+    {
+        "id": 5,
+        "name": "Julian 3",
+        "email": "Julian@gmail.com"
+    },
+    {
+    ": 3,
+    nombre": "Tatiana",
+    edad": 17,
+    Tipo_doc": "TI",
+    numero_doc": 1354
+
+    }
+]

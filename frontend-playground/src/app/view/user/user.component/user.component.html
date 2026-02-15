@@ -1,0 +1,44 @@
+<!-- <p>user.component works!</p>
+
+<pre>{{ users | json }}</pre> -->
+<!-- <ul>
+    <li *ngFor="let u of users" >
+        {{ u.name }} - {{ u.email }}
+    </li>
+</ul> -->
+<!-- <div>
+    <button class="btn btn-primary mb-4"> Botón con Bootstrap</button>
+
+</div> -->
+
+<div class="row g-3">
+
+    @for(u of users; track u.id){
+
+    <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card" style="width: 18rem;">
+
+            <div class="card-body">
+                <h5 class="card-title">{{ u.id }}</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">{{ u.name }}</h6>
+                <p class="card-text">{{ u.email }}</p>
+                <!-- <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a> -->
+            </div>
+        </div>
+    </div>
+    }
+</div>
+
+
+<!-- <p>Hola Mundo</p>
+<ul>
+    @for (u of users; track u.id){
+        <li> {{ u.name }} - {{ u.email }} </li>
+    }
+</ul> 
+
+<div>
+
+    <button > Botón sin Bootstrap</button>
+</div> -->
