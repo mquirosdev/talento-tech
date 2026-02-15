@@ -1,0 +1,22 @@
+{
+  "name": "Java 21 + Maven + PostgreSQL",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-test",
+        "cweijan.vscode-postgresql-client2",
+        "Postman.postman-for-vscode",
+        "vmware.vscode-boot-dev-pack"
+      ]
+    }
+  },
+  "forwardPorts": [8080, 5432]
+}

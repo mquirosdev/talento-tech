@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  app:
+    image: maven:3.9.12-eclipse-temurin-21-alpine
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    depends_on:
+      - db
+    networks:
+      - dev
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgresql
+      POSTGRES_PASSWORD: postgresql
+      POSTGRES_DB: postgresql
+    volumes:
+      - postgresql-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - dev
+
+volumes:
+  postgresql-data:
+
+networks:
+  dev:
